@@ -1,34 +1,43 @@
-# 🤖 Telegram Bot with Python (Polling Method)
+# ⛽  Ozen Telegram Crypto Gas Fee Bot
 
-This is a simple Python-based Telegram bot that works using polling — no need for Flask, webhooks, or any deployment platform.
+A powerful and easy-to-use Telegram bot that helps users track Ethereum and multi-chain gas prices, calculate manual transaction fees, and receive gas drop alerts — right from Telegram!
 
----
 
-## ✨ Features
-
-- Responds to the `/start` command
-- Built using `python-telegram-bot` library
-- No Flask or web server required
-- Runs with `run_polling()` — ideal for beginners
+link- (https://t.me/Ozengasbot)
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 ---
 
+## 🚀 Features
+
+- ✅ Get current Ethereum gas price with `/gas`
+- ✅ Compare gas prices on Ethereum, BNB, and Polygon with `/multigas`
+- ✅ Calculate manual gas fee in ETH and USD using `/calculate gasLimit gasPrice`
+- ✅ Set an alert for low gas prices with `/setalert Gwei`
+- ✅ Real-time ETH to USD conversion
+- ✅ Background checker that notifies users when gas drops
+- ✅ Fully Telegram-native interface (no website needed)
+- ✅ Async-based architecture using `python-telegram-bot v20+`
+- ✅ Easily extendable for more chains and utilities
 
 ---
 
-## 🐍 Prerequisites
+## 📦 Tech Stack
 
-- Python 3.8 or higher
-- A Telegram bot token from [BotFather](https://t.me/BotFather)
+- **Python 3.10+**
+- **python-telegram-bot v20+**
+- **Flask (optional, for Replit uptime)**
+- **Requests (for API calls)**
+- **Etherscan, BscScan, PolygonScan APIs**
+- **CoinGecko API** for live ETH/USD rate
 
 ---
 
-## 🔧 Setup Instructions
+## 🔧 Installation & Setup
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/telegram-bot.git
-cd telegram-bot
-
-
+git clone https://github.com/yourusername/gas-fee-bot.git
+cd gas-fee-bot
